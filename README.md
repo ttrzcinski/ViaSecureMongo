@@ -21,6 +21,11 @@ curl http://localhost:8080/users/search/findByRoleName?name=McCaine
 How to add new user:
 curl -i -X POST -H "Content-Type:application/json" -d "{  \"username\" : \"Tomasso\",  \"roleName\" : \"McCaine\" }" http://localhost:8080/users
 
+
+How to generate new token:
+- CALL: curl -i -X POST -H "Content-Type:application/json" -d "{  \"username\" : \"TestAdmin\",  \"password\" : \"test\" }" http://localhost:7001/auth/generateToken
+- RESPONSE: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJUZXN0QWRtaW4iLCJpYXQiOjE3MTUyMDkzNTksImV4cCI6MTcxNTIxMTE1OX0.JFCNps5HzzSE-HQeB-u8UUsXM76CpXD0-yfKoOOst2M
+
 # Used:
 
 - Spring Boot 3.2

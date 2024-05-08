@@ -1,14 +1,16 @@
 package org.ttrzcinski.simple_mongo_security;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-@ToString
-public class LoginRequest {
+public class AuthRequest {
+
     private String username;
     private String password;
+
 }
+
